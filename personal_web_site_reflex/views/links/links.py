@@ -1,5 +1,6 @@
 import reflex as rx
-from personal_web_site_reflex.components.link_buttun import link_buttun
+import personal_web_site_reflex.constants as const
+from personal_web_site_reflex.components.link_buttun import link_button
 from personal_web_site_reflex.components.title import title
 from personal_web_site_reflex.styles.styles import Size as Size
 
@@ -8,22 +9,30 @@ from personal_web_site_reflex.styles.styles import Size as Size
 def links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
-        link_buttun(
+        link_button(
             "LinkedIn", 
             "Profesional Profile",
-            "https://www.linkedin.com/in/yharyarias/"),
-        link_buttun(
+            "icons/linkedin.svg",
+            const.LINKEDIN_URL
+            ),
+        link_button(
             "X", 
             "Anything technology", 
-            "https://twitter.com/yharyarias5"),
-        link_buttun(
+            "icons/x.svg",
+            const.TWITTER_X_URL
+            ),
+        link_button(
             "GitHub", 
             "Code Portfolio", 
-            "https://github.com/yharyarias"),
-        link_buttun(
+            "icons/github.svg",
+            const.GITHUB_URL
+            ),
+        link_button(
             "YouTube", 
             "Programming tutorials", 
-            "https://youtube.com/@yharyarias596?si=AHoi4ApDd-hJkSIi"),
+            "icons/youtube.svg",
+            const.YOUTUBE_ELIA_URL
+            ),
         width="100%",
         spacing=Size.MEDIUM.value,
     )

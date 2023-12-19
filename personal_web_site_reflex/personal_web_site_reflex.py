@@ -26,6 +26,13 @@ def index() -> rx.Component:
         footer()
     )
 
-app = rx.App()
-app.add_page(index) 
-app.compile()  
+app = rx.App(
+    style=styles.BASE_STYLE
+)
+app.add_page(
+    index,
+    title="YharyArias | Soy Machine Learning y profe de programación",
+    description="Hola, mi nombre es Yhary Arias. Soy ingeniera de sistemas, magister en AI, creadora de ELIA y a veces profe de programación.",
+    image="avatar.jpg"
+)
+app.compile()
