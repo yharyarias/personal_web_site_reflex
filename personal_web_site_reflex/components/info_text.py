@@ -1,7 +1,6 @@
 import reflex as rx
-from personal_web_site_reflex.styles.styles import Size as Size
-from personal_web_site_reflex.styles.colors import Color as Color
-from personal_web_site_reflex.styles.colors import TextColor as TextColor
+from personal_web_site_reflex.styles.styles import Size
+from personal_web_site_reflex.styles.colors import Color, TextColor
 
 
 def info_text(title: str, body: str) -> rx.Component:
