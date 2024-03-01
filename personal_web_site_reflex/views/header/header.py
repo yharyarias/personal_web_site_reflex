@@ -17,8 +17,8 @@ def header() -> rx.Component:
                 src="avatar.png",
                 color=TextColor.BODY.value,
                 bg=Color.CONTENT.value,
-                padding="2xp",
-                border="4xp",
+                padding="2px",
+                border="4px",
                 border_color=Color.PRIMARY.value
             ),
             rx.vstack(
@@ -54,7 +54,7 @@ def header() -> rx.Component:
                     ),
                     link_icon(
                         "icons/x.svg",
-                        const.TWITCH_URL,
+                        const.TWITTER_X_URL,
                         "Twitter/X"
                     ),
                     

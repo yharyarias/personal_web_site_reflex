@@ -35,7 +35,7 @@ app = rx.App(
 
 app.add_page(
     index,
-    title="YharyArias | Soy Machine Learning y profe de programación",
+    title="YharyArias | Machine Learning Engineer y creadora de contenido",
     description="Hola, mi nombre es Yhary Arias. Soy ingeniera de sistemas, magister en AI, creadora de ELIA y a veces profe de programación.",
     image="logo_blanco.png"
 )

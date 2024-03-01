@@ -37,7 +37,7 @@ def links() -> rx.Component:
             "YouTube", 
             "Programming tutorials", 
             "icons/youtube.svg",
-            const.YOUTUBE_ELIA_URL
+            const.YOUTUBE_URL
         ),
         title("Contacto"),
         link_button(
@@ -45,6 +45,12 @@ def links() -> rx.Component:
             const.EMAIL,
             "icons/email.svg",
             f"mailto:{const.EMAIL}"
+        ),
+        link_button(
+            "Invítame a un café", 
+            "¿Quieres apoyar mi contenido?", 
+            "icons/coffee.svg",
+            const.COFFEE_URL
         ),
         width="100%",
         spacing=Size.DEFAULT.value,
